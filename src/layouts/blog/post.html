@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  {{{chunk 'head'}}}
+
+  <body class="page">
+    {{{chunk 'header'}}}
+
+    <main class="content">
+      <div class="content__container container">
+        <section class="post">
+          <header class="post__heading">
+            <h1 class="post__heading-title">{{doc.title}}</h1>
+            <time class="post__heading-date" dateitme="{{date doc.date format='YYYY-MM-DD'}}">{{date doc.date}}</time>
+          </header>
+          <article class="post__content">
+            {{{doc.content}}}
+          </article>
+          <footer class="post__footer">
+            {{#if doc.source}}
+              <div class="post__footer-source">Источник: <a href="{{doc.source}}">{{doc.source}}</a></div>
+            {{/if}}
+            <div class="post__footer-share">
+                <span class="yashare-auto-init" data-yashareL10n="{{config.locale}}" data-yashareType="none" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,gplus" data-yashareDescription="{{cut doc.rawContent }}" data-yashareLink="{{config.siteUrl}}{{doc.url}}" data-yashareTitle="{{doc.title}}"></span>
+            </div>
+          </footer>
+        </section>
+      </div>
+    </main>
+
+    {{{chunk 'footer'}}}
+  </body>
+</html>

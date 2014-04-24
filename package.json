@@ -1,0 +1,13 @@
+{
+  "name": "zenwalker.ru",
+  "private": true,
+  "devDependencies": {
+    "zenpad": "*",
+    "gulp-concat": "^2.2.0",
+    "gulp": "^3.6.1",
+    "gulp-autoprefixer": "0.0.7"
+  },
+  "scripts": {
+    "build": "gulp default"
+  }
+}
