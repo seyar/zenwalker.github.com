@@ -2,12 +2,15 @@
   "name": "zenwalker.ru",
   "private": true,
   "devDependencies": {
-    "zenpad": "*",
+    "zenpad": "0.0.1",
     "gulp-concat": "^2.2.0",
     "gulp": "^3.6.1",
-    "gulp-autoprefixer": "0.0.7"
+    "gulp-autoprefixer": "0.0.7",
+    "marked": "^0.3.2"
   },
   "scripts": {
-    "build": "gulp default"
+    "build-prod": "gulp default && zenpad build",
+    "build-html": "zenpad build -e development",
+    "build-assets": "gulp default"
   }
 }
