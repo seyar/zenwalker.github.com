@@ -1,9 +1,13 @@
 module.exports = function (zenpad, params) {
   var output = '';
  
+  var filter = function(doc) {
+    return !doc.isdraft;
+  };
+
   var docs = params.hash.docs
     ? params.hash.docs
-    : zenpad.getDocs('blog/', {});
+    : zenpad.getDocs('blog/', { filter: filter });
   
   docs = docs.sort(function(a, b) {
     return b.date - a.date;
