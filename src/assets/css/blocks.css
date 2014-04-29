@@ -259,3 +259,21 @@
     {
         position: relative;
     }
+
+.link
+{
+    border-bottom: 1px solid #06c;
+    text-decoration: none;
+    color: #06c;
+}
+
+    .link:hover
+    {
+        border-color: #c04;
+        color: #c04;
+    }
+
+    .link_ajax
+    {
+        border-bottom-style: dotted;
+    }
