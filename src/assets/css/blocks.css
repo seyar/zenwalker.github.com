@@ -277,3 +277,18 @@
     {
         border-bottom-style: dotted;
     }
+
+.heading
+{
+
+}
+
+    .heading__text
+    {
+        margin-bottom: 0;
+    }
+
+    .heading_main
+    {
+        margin-bottom: 30px;
+    }
