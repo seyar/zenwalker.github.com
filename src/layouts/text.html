@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{config.locale}}">
+  {{{chunk 'head'}}}
+
+  <body class="page">
+    {{{chunk 'header'}}}
+
+    <main class="content">
+      <div class="content__container container">
+        <div class="heading heading_main">
+          <h1 class="heading__text">{{doc.title}}</h1>
+        </div>
+        {{{doc.content}}}
+      </div>
+    </main>
+
+    {{{chunk 'footer'}}}
+  </body>
+</html>
