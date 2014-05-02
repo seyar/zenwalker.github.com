@@ -10,7 +10,8 @@ var config = {
   default: {
     siteUrl: 'http://zenwalker.ru/',
     siteName: 'zenwalker.ru',
-    locale: 'ru'
+    locale: 'ru',
+    email: 'zenwalker2@gmail.com'
   },
   development: {
     siteUrl: 'file://' + cwd + '/build/'
