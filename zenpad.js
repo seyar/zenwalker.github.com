@@ -8,8 +8,8 @@ var cwd = (function() {
 
 var config = {
   default: {
-    siteUrl: 'http://zenwalker.ru/',
-    siteName: 'zenwalker.ru',
+    siteUrl: 'http://zenwalker.me/',
+    siteName: 'zenwalker.me',
     locale: 'ru',
     email: 'zenwalker2@gmail.com'
   },
