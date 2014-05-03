@@ -8,7 +8,7 @@
     {{else}}
       <a class="blog-post__title link" href="{{this.url}}">{{this.title}}</a>
     {{/if}}
-    <div class="blog-post__published">{{date this.date}}</div>
+    <time class="blog-post__published" datetime="{{date this.date format='YYYY-MM-DD'}}">{{date this.date}}</time>
   </div>
   <div class="blog-post__intro">
     {{{this.intro}}}
