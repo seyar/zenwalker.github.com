@@ -26,6 +26,13 @@ module.exports = function(zenpad) {
 
   zenpad.listenEvent('afterDocParse', function(doc) {
     if (/\.md$/.test(doc.url)) {
+      if (!doc.title) {
+        var headings = doc.content.match(/^#\s(.*)$/gm);
+        if (headings.length) {
+          doc.content = doc.content.replace(headings[0], '').trim();
+          doc.title = headings[0].slice(2);
+        }
+      }
       doc.url = doc.url.replace(/\.md$/, '.html');
       doc.content = marked(doc.content, { renderer: renderer });
     }
