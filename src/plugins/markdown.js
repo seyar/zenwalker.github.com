@@ -28,7 +28,7 @@ module.exports = function(zenpad) {
     if (/\.md$/.test(doc.url)) {
       if (!doc.title) {
         var headings = doc.content.match(/^#\s(.*)$/gm);
-        if (headings.length) {
+        if (headings) {
           doc.content = doc.content.replace(headings[0], '').trim();
           doc.title = headings[0].slice(2);
         }
