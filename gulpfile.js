@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var prefix = require('gulp-autoprefixer');
+var minifycss = require('gulp-minify-css');
 
 
 var sources = {
@@ -31,6 +32,7 @@ gulp.task('css', function() {
   gulp.src(sources.css)
     .pipe(concat('common.css'))
     .pipe(prefix(['last 2 versions']))
+    .pipe(minifycss())
     .pipe(gulp.dest('build/assets'));
 });
 
