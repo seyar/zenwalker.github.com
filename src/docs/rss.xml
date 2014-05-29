@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>{{config.siteName}}</title>
+    <link>{{config.siteUrl}}</link>
+    <description>Python, PHP, JavaScript разработчик</description>
+    {{#widget 'blog'}}
+      <item>
+        <title>{{this.title}}</title>
+        <link>{{../config.siteUrl}}{{this.url}}</link>
+        <pubDate>{{date this.date format='ddd, DD MMM YYYY HH:mm:ss ZZ' lang='en'}}</pubDate>
+        <description>{{{cut this.rawContent}}}</description>
+      </item>
+    {{/widget}}
+  </channel>
+</rss>
