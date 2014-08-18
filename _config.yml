@@ -1,0 +1,21 @@
+# Site
+title:   "zenwalker.me"
+slogan:  "Python, PHP, JavaScript разработчик"
+url:     "http://zenwalker.me"
+baseurl: ""
+
+author:
+  email:   "zenwalker2@gmail.com"
+  twitter: "zenwalker2"
+  github:  "zenwalker"
+
+# Source
+source:      ./src
+destination: ./build
+plugins:     ./src/_plugins
+layouts:     ./src/_layouts
+data_source: ./src/_data
+
+# Build
+markdown:  kramdown
+permalink: /:year/:month/:title.html

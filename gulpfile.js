@@ -6,25 +6,15 @@ var minifycss = require('gulp-minify-css');
 
 var sources = {
   css: [
-    'src/assets/css/reset.css',
-    'src/assets/css/typo.css',
-    'src/assets/css/blocks.css',
-    'src/assets/modules/**/*.css'
+    'src/_assets/css/reset.css',
+    'src/_assets/css/typo.css',
+    'src/_assets/css/blocks.css',
+    'src/_assets/modules/**/*.css'
   ],
   js: [
-    'src/assets/vendor/**/*.js',
-    'src/assets/modules/**/*.js',
-    'src/assets/js/*.js'
-  ],
-  fonts: [
-    'src/assets/fonts/**/*.ttf',
-    'src/assets/fonts/**/*.woff',
-    'src/assets/fonts/**/*.eot',
-    'src/assets/fonts/**/*.svg',
-    'src/assets/modules/**/*.ttf',
-    'src/assets/modules/**/*.woff',
-    'src/assets/modules/**/*.eot',
-    'src/assets/modules/**/*.svg'
+    'src/_assets/vendor/**/*.js',
+    'src/_assets/modules/**/*.js',
+    'src/_assets/js/*.js'
   ]
 };
 
@@ -42,14 +32,4 @@ gulp.task('js', function() {
     .pipe(gulp.dest('build/assets'));
 });
 
-gulp.task('img', function() {
-  gulp.src('src/assets/favicon.png')
-    .pipe(gulp.dest('build/assets'));
-});
-
-gulp.task('fonts', function() {
-  gulp.src(sources.fonts)
-    .pipe(gulp.dest('build/assets/fonts'))
-});
-
-gulp.task('default', ['css', 'js', 'img', 'fonts']);
+gulp.task('default', ['css', 'js']);

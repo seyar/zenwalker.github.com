@@ -1,0 +1,14 @@
+<header class="header">
+  <div class="header__container container">
+    <nav class="header__menu">
+      {% for item in site.pages %}
+        {% if item.title %}
+          <a class="header__menu-item{% if page.url == item.url %} header__menu-item_active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+    <div class="header__logo"><a class="header__logo-brand" href="/">{{ site.title }}</a>
+      <div class="header__logo-slogan">{{ site.slogan }}</div>
+    </div>
+  </div>
+</header>
