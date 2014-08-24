@@ -20,7 +20,7 @@ layout: "post"
 
 Но не красиво, не люблю я лишние кавычки. А можно запилить свою директиву `ngDefault`, которая будет делать тоже самое.
 
-```javscrtpt
+```js
 App.directive('ngDefault', function($rootScope) {
   return {
     restrict: 'A',

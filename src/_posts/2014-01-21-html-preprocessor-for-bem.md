@@ -58,7 +58,7 @@ layout: "post"
 $ npm install beml
 ```
 
-```javascript
+```js
 var beml = require('beml');
 var template = '<div block="b-block" mod="size:big"></div>';
 

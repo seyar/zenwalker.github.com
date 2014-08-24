@@ -1,12 +1,13 @@
 <head>
   <meta charset="utf-8">
-  <base href="{{config.siteUrl}}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <link rel="shortcut icon" href="assets/favicon.png">
-  <link rel="stylesheet" href="assets/common.css">
-  <link rel="stylesheet" href="http://yandex.st/highlightjs/7.4/styles/github.min.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Exo+2:400,300,300italic,400italic,500,500italic,600,600italic,700italic,700&amp;subset=latin,cyrillic">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Ubuntu+Condensed&amp;subset=latin,cyrillic">
-  <link rel="alternate" type="application/rss+xml" title="{{config.siteName}}" href="rss.xml">
+
+  <link rel="stylesheet" href="//yandex.st/highlightjs/7.4/styles/github.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Exo+2:400,300,300italic,400italic,500,500italic,600,600italic,700italic,700&amp;subset=latin,cyrillic">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Ubuntu+Condensed&amp;subset=latin,cyrillic">
+  {% stylesheet main %}
+
+  <link rel="shortcut icon" href="{% asset_path favicon.png %}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="feed.xml">
 </head>

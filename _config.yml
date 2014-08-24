@@ -2,6 +2,7 @@
 title:   "zenwalker.me"
 slogan:  "Python, PHP, JavaScript разработчик"
 url:     "http://zenwalker.me"
+locale:  "ru"
 baseurl: ""
 
 author:
@@ -17,5 +18,16 @@ layouts:     ./src/_layouts
 data_source: ./src/_data
 
 # Build
-markdown:  kramdown
-permalink: /:year/:month/:title.html
+permalink:   /:year/:month/:title.html
+markdown:    redcarpet
+highlighter: pygments
+
+# Assets
+assets:
+  js_compressor:  uglifier
+  css_compressor: sass
+  cache:          true
+
+# Markdown
+redcarpet:
+  extensions: ["no_intra_emphasis", "autolink", "strikethrough", "superscript", "tables", "highlight"]

@@ -11,7 +11,7 @@ layout: default
       {% endif %}
       <div class="blog-post__heading">
         <a class="blog-post__title link" href="{% if post.redirect %}{{ post.redirect }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>
-        <time class="blog-post__published" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | localize: "%d %B %Y" }}</time>
+        <time class="blog-post__published" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | localize: "%d %B %Y" }} г.</time>
       </div>
       <div class="blog-post__intro">
         {{ post.content | split: "<!-- cut -->" | first }}

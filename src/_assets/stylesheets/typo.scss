@@ -136,6 +136,10 @@ table {
   width: 100%;
 }
 
+tbody tr:nth-child(odd) {
+  background-color: #eee;
+}
+
 th, td {
   padding: 5px;
   border: 1px solid #ddd;

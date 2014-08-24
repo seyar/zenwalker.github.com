@@ -59,7 +59,7 @@
     {
         line-height: 1;
     }
-    
+
         .header__logo-brand
         {
             text-decoration: none;
@@ -177,15 +177,21 @@
             color: #666;
         }
 
-            .post__footer-share
+            .post__footer-comments
             {
-
+                font-weight: bold;
             }
 
-            .post__footer-source {
+            .post__footer-source
+            {
                 line-height: 26px;
                 float: right;
             }
+
+    .post__comments
+    {
+        padding-top: 20px;
+    }
 
 .footer
 {

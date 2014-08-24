@@ -6,14 +6,16 @@ layout: default
 <section class="post">
   <header class="post__heading">
     <h1 class="post__heading-title">{{ page.title }}</h1>
-    <time class="post__heading-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | localize: "%d %B %Y" }}</time>
+    <time class="post__heading-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | localize: "%d %B %Y" }} г.</time>
   </header>
   <article class="post__content">
     {{ content }}
   </article>
   <footer class="post__footer">
-    {% if page.source %}
-      <div class="post__footer-source">Источник: <a href="{{ page.source }}">{{ page.source }}</a></div>
-    {% endif %}
+    <a class="post__footer-comments" href="{{ page.url }}#disqus_thread" data-thread="{{ page.url | prepend: site.url }}">Комментарии</a>
+    {% if page.source %}<div class="post__footer-source">Источник: <a href="{{ page.source }}">{{ page.source }}</a></div>{% endif %}
   </footer>
+  <div class="post__comments">
+    <div class="post__comments-thread" id="disqus_thread"></div>
+  </div>
 </section>
