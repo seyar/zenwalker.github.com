@@ -1,8 +1,8 @@
 ---
-title:   "Немного о 1С-Битрикс"
-date:    2014-05-04 02:26:00
-tags:    ["cms", "hate", "1c"]
-layout:  "post"
+title:  "Немного о 1С-Битрикс"
+date:   2014-05-04 02:26:00
+tags:   ["cms", "hate", "1c"]
+layout: "post"
 
 ---
 

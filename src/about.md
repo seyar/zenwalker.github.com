@@ -1,6 +1,7 @@
 ---
-layout: "page"
-title:  "Обо мне"
+layout:    "page"
+title:     "Обо мне"
+published: false
 
 ---
 

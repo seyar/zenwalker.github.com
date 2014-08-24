@@ -1,10 +1,10 @@
 ---
-title: "Динамически-создаваемые «асинхронные скрипты» являются вредными"
+title:    "Динамически-создаваемые «асинхронные скрипты» являются вредными"
+date:     13-06-2014 00:00:00
+layout:   "post"
+icon:     "export"
+tags:     ["javascript"]
 redirect: "http://frontender.info/script-injected-async-scripts-considered-harmful/"
-date: 13-06-2014 00:00:00
-layout: "post"
-icon: "export"
-tags: ["javascript"]
 
 ---
 

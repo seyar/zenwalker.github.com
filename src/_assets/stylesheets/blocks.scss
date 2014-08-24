@@ -36,6 +36,7 @@
     .header__menu-item
     {
         font-family: "Ubuntu Condensed";
+        transition: color 0.3s ease;
         text-transform: uppercase;
         text-decoration: none;
         display: inline-block;
@@ -168,25 +169,29 @@
             color: #888;
         }
 
-        .post__footer {
-            border-bottom: 1px solid #ddd;
-            border-top: 1px solid #ddd;
-            margin-bottom: 20px;
-            overflow: hidden;
-            padding: 10px 0;
-            color: #666;
+    .post__content {
+        margin-bottom: 25px;
+    }
+
+    .post__footer {
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        margin-bottom: 20px;
+        overflow: hidden;
+        padding: 10px 0;
+        color: #666;
+    }
+
+        .post__footer-comments
+        {
+            font-weight: bold;
         }
 
-            .post__footer-comments
-            {
-                font-weight: bold;
-            }
-
-            .post__footer-source
-            {
-                line-height: 26px;
-                float: right;
-            }
+        .post__footer-source
+        {
+            line-height: 26px;
+            float: right;
+        }
 
     .post__comments
     {

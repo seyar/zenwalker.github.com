@@ -20,13 +20,13 @@ data_source: ./src/_data
 # Build
 permalink:   /:year/:month/:title.html
 markdown:    redcarpet
-highlighter: pygments
+highlighter: null
 
 # Assets
 assets:
   js_compressor:  uglifier
   css_compressor: sass
-  cache:          true
+  cache:          false
 
 # Markdown
 redcarpet:
