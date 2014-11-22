@@ -1,5 +1,8 @@
-node_modules/
-build/
-npm-debug.log
-.sass-cache/
 src/.jekyll-assets-cache
+.bundle
+node_modules
+build
+vendor
+Gemfile.lock
+.sass-cache
+npm-debug.log
