@@ -3,6 +3,7 @@ title:    "Наследование и композиция с Polymer"
 redirect: "http://frontender.info/inheritance-and-composition-with-polymer/"
 tags:     ["javascript", "web-components"]
 date:     2014-11-21 20:25:00
+icon:     "export"
 layout:   "post"
 
 ---
